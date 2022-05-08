@@ -5,21 +5,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".fragments.BesinDetailFragment">
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/textViewDetailBesinIsmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text text"
+            android:textSize="20sp"
+            android:layout_below="@id/imageViewDetail"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            />
 
-        <Button
-            android:id="@+id/goBesintList"
-            android:layout_width="125dp"
-            android:layout_height="48dp"
-            android:text="Listeye git"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textViewDetailBesinKalori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalori"
+            android:textSize="20sp"
+            android:layout_below="@id/textViewDetailBesinIsmi"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textViewDetailBesinKarbonhidrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalori"
+            android:textSize="20sp"
+            android:layout_below="@id/textViewDetailBesinKalori"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewDetailBesinProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protein"
+            android:textSize="20sp"
+            android:layout_below="@id/textViewDetailBesinKarbonhidrat"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewDetailBesinYag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yag"
+            android:textSize="20sp"
+            android:layout_below="@id/textViewDetailBesinProtein"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            />
+    </RelativeLayout>
 
 </layout>

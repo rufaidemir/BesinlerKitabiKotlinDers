@@ -13,7 +13,7 @@
             app:destination="@id/besinDetailFragment"
             app:enterAnim="@anim/nav_default_pop_enter_anim" />
         <argument
-            android:name="besinId"
+            android:name="besin_id"
             app:argType="integer"
             android:defaultValue="0" />
     </fragment>

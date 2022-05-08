@@ -26,9 +26,6 @@ class BesinListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        naviGationbesinListesi.setOnClickListener{
-            val action = BesinListFragmentDirections.actionBesinListFragmentToBesinDetailFragment()
-            Navigation.findNavController(it).navigate(action)
-        }
+
     }
 }
