@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/besinListFragment"
-        android:name="com.rufaidemir.besinlerkitabi.fragments.BesinListFragment"
+        android:name="com.rufaidemir.besinlerkitabi.view.BesinListFragment"
         android:label="BesinListFragment" >
         <action
             android:id="@+id/action_besinListFragment_to_besinDetailFragment"
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/besinDetailFragment"
-        android:name="com.rufaidemir.besinlerkitabi.fragments.BesinDetailFragment"
+        android:name="com.rufaidemir.besinlerkitabi.view.BesinDetailFragment"
         android:label="BesinDetailFragment" >
         <action
             android:id="@+id/action_besinDetailFragment_to_besinListFragment"
